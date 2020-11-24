@@ -5,6 +5,8 @@
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 a {
@@ -32,22 +34,27 @@ font-family: 'Roboto', sans-serif;*/
 
 /*header*/
 
+body {
+  width: 1600px;
+}
+
 header {
   background-color: var(--section-background-color);
 
-  width: 1600px;
-
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
 }
 
 header .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
+  font-size: 26px;
   line-height: 1, 192;
   letter-spacing: 0, 03em;
   color: var(--main-text-color);
+  display: flex;
+  margin-right: 93px;
+  margin-left: 215px;
 }
 
 header .logo-contrast {
@@ -60,15 +67,22 @@ header .logo-contrast {
 
 .navigation li {
   display: flex;
-  justify-content: space-between;
+}
+
+.navigation li:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation a {
   font-family: Roboto, sans-serif;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1, 143;
   letter-spacing: 0, 02em;
   color: var(--main-text-color);
+
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .navigation a:hover,
@@ -81,20 +95,27 @@ header .logo-contrast {
   color: var(--selected-text-color);
 }
 
+header address {
+  display: flex;
+  margin-left: auto;
+}
+
 header address ul {
   display: flex;
-  justify-content: space-between;
 }
 
 header address li {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+}
+
+header address li:not(:last-child) {
+  margin-right: 50px;
 }
 
 header address a {
   font-family: Roboto, sans-serif;
   font-weight: 500;
+  font-size: 14px;
   line-height: 1, 143;
   letter-spacing: 0, 02em;
   color: var(--minor-text-color);
@@ -116,16 +137,26 @@ header address a:active {
   letter-spacing: 0, 06em;
   color: var(--contrast-text-color);
   background-color: var(--footer-background-color);
+
+  height: 600px;
+
+  display: flex;
+  align-self: center;
+  align-items: center;
+
+  text-align: center;
+  justify-content: center;
 }
 
 h1 {
   font-size: 44px;
-  line-height: 50px;
+  line-height: 1, 36;
   text-transform: uppercase;
   text-align: center;
 }
 
 .hero button {
+  font-size: 16px;
   line-height: 1, 875;
   text-align: center;
   background-color: var(--main-button-color);
@@ -133,6 +164,9 @@ h1 {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border-color: var(--main-button-color);
+
+  display: flex; /*WTF?*/
+  margin-bottom: 30px;
 }
 /*section advantages*/
 
@@ -140,26 +174,37 @@ h1 {
   font-family: Roboto, sans-serif;
   letter-spacing: 0, 03em;
   background-color: var(--main-background-color);
+
   display: flex;
+  padding-top: 95px;
 }
 
 .advantages ul {
   display: flex;
 }
 
+.advantages li {
+  width: 270px;
+}
+.advantages li:not(:last-child) {
+  margin-right: 30px;
+}
 .advantages h2 {
   color: var(--main-background-color);
 }
 
 .advantages h3 {
+  font-size: 14px;
   font-weight: 700;
   line-height: 1, 143;
   text-transform: uppercase;
   color: var(--main-text-color);
+  margin-bottom: 10px;
 }
 
 .advantages p {
   font-weight: 400;
+  font-size: 14px;
   line-height: 1, 714;
   color: var(--minor-text-color);
 }
@@ -170,6 +215,7 @@ h1 {
   font-family: Roboto, sans-serif;
   letter-spacing: 0, 03em;
   background-color: var(--main-background-color);
+  padding-top: 94px;
 }
 
 .services ul {
@@ -177,15 +223,19 @@ h1 {
   justify-content: center;
 }
 
-.services li {
+.services li:not(:last-child) {
+  display: flex;
   margin-right: 30px;
 }
 
 h4 {
   font-weight: 700;
-  line-height: 1, 167;
+  font-size: 36px;
+  line-height: 1, 17;
   text-align: center;
   color: var(--main-text-color);
+  margin-bottom: 50px;
+  padding-top: 94px;
 }
 
 /*section team*/
@@ -203,15 +253,16 @@ h4 {
   border-radius: 0px 0px 4px 4px;
 
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
-.team li {
+.team li:not(:last-child) {
   margin-right: 30px;
 }
 
 .team h5 {
   font-weight: 500;
+  font-size: 16px;
   line-height: 1, 188;
   text-align: center;
   color: var(--main-text-color);
@@ -219,6 +270,7 @@ h4 {
 
 .team p {
   font-weight: 400;
+  font-size: 16px;
   line-height: 1, 188;
   text-align: center;
   color: var(--minor-text-color);
@@ -228,14 +280,18 @@ h4 {
 
 footer {
   background-color: var(--footer-background-color);
+  margin-top: 94px;
+  padding-top: 60px;
 }
 
 footer .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
+  font-size: 26px;
   line-height: 1, 192;
   letter-spacing: 0, 03em;
   color: var(--contrast-text-color);
+  margin-left: 215px;
 }
 
 footer .logo-contrast {
@@ -244,9 +300,16 @@ footer .logo-contrast {
 footer address ul {
   font-family: Roboto, sans-serif;
   font-weight: 400;
+  font-size: 14px;
   line-height: 1, 714;
   letter-spacing: 0, 03em;
   color: var(--contrast-text-color);
+  margin-left: 215px;
+  margin-top: 20px;
+  padding-bottom: 60px;
+}
+footer address li:not(:last-child) {
+  margin-bottom: 9px;
 }
 footer address a {
   color: var(--footer-adress-color);
@@ -272,6 +335,7 @@ footer address a {
 .buttons .item {
   font-weight: 500;
   line-height: 1, 625;
+  font-size: 16px;
   letter-spacing: 0, 03em;
   text-align: center;
   color: var(--main-text-color);
@@ -307,6 +371,7 @@ footer address a {
 
 .projects h3 {
   font-weight: 700;
+  font-size: 18px;
   line-height: 2;
   letter-spacing: 0, 06em;
   color: var(--main-text-color);
@@ -314,6 +379,7 @@ footer address a {
 
 .projects p {
   font-weight: 400;
+  font-size: 16px;
   line-height: 1, 875;
   letter-spacing: 0, 03em;
   color: var(--minor-text-color);
