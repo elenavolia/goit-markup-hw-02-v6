@@ -288,6 +288,9 @@ h4 {
   display: flex;
   justify-content: center;
 }
+.team li :not(:last-child) {
+  margin-right: 30px;
+}
 
 .team-item:not(:last-child) {
   margin-right: 30px;
