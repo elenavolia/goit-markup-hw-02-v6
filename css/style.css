@@ -201,7 +201,7 @@ h1 {
 /*section advantages*/
 
 .advantages {
-  font-family: Roboto, sans-serif;
+  font-family: Roboto;
   letter-spacing: 0.03em;
   background-color: var(--main-background-color);
 }
@@ -228,7 +228,7 @@ h1 {
 .advantages h3 {
   font-size: 14px;
   font-weight: 700;
-  line-height: 1, 143;
+  line-height: 1, 17;
   text-transform: uppercase;
   color: var(--main-text-color);
   margin-bottom: 10px;
@@ -237,7 +237,7 @@ h1 {
 .advantages p {
   font-weight: 400;
   font-size: 14px;
-  line-height: 1, 714;
+  line-height: 1, 71;
   color: var(--minor-text-color);
   width: 270px;
 }
@@ -289,7 +289,7 @@ h4 {
   justify-content: center;
 }
 
-.team li:not(:last-child) {
+.team-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -324,7 +324,6 @@ footer .logo {
   line-height: 1, 192;
   letter-spacing: 0, 03em;
   color: var(--contrast-text-color);
-  margin-left: 215px;
 }
 
 footer .logo-contrast {
@@ -337,7 +336,7 @@ footer address ul {
   line-height: 1, 714;
   letter-spacing: 0, 03em;
   color: var(--contrast-text-color);
-  margin-left: 215px;
+
   margin-top: 20px;
   padding-bottom: 60px;
 }
@@ -363,15 +362,11 @@ footer address a {
   justify-content: center;
 }
 
-.buttons-item:not(:last-child) {
+.buttons-item {
   margin-right: 8px;
 }
 
-.buttons h2 {
-  color: var(--main-background-color);
-}
-
-.buttons .button {
+.button {
   margin: 0;
   padding: 6px 22px;
   letter-spacing: 0.03em;
@@ -432,10 +427,17 @@ footer address a {
   flex-wrap: wrap;
 }
 .projects-item {
-  width: calc((100% - 30px * 2=) / 3);
+  width: calc((100% - 30px * 2) / 3);
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
+.projects-item:nth-child(3n) {
+  margin-right: 0px;
+}
+.projects-item:nth-last-child(-n + 3) {
+  margin-bottom: 0px;
+}
 .projects-item img {
   display: block;
 }
@@ -448,9 +450,7 @@ footer address a {
   list-style-type: none;
   background-color: var(--section-background-color);
 }
-.projects li:nth-last-child(3n) {
-  margin-right: 0;
-}
+
 .projects h3 {
   font-weight: 700;
   font-size: 18px;
