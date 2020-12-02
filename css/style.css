@@ -36,8 +36,8 @@ p {
 }
 
 :root {
-  --main-background-color: #e5e5e5;
-  --minor-background-color: #f5f4fa;
+  --main-background-color: #f9f9f9;
+  --minor-background-color: #f3f5fa;
   --footer-background-color: #2f303a;
   --section-background-color: #ffffff;
   --main-button-color: #2196f3;
@@ -227,8 +227,11 @@ h1 {
 }
 
 .advantages h3 {
+  font-family: Roboto;
   font-size: 14px;
   font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.03em;
   line-height: 1, 17;
   text-transform: uppercase;
   color: var(--main-text-color);
@@ -238,6 +241,8 @@ h1 {
 .advantages p {
   font-family: Roboto;
   font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1, 71;
   color: var(--minor-text-color);
@@ -305,6 +310,8 @@ h4 {
   line-height: 1, 188;
   text-align: center;
   color: var(--main-text-color);
+  padding-top: 30px;
+  padding-bottom: 10px;
 }
 
 .team p {
@@ -313,6 +320,7 @@ h4 {
   line-height: 1, 188;
   text-align: center;
   color: var(--minor-text-color);
+  padding-bottom: 30px;
 }
 
 /*footer*/
@@ -340,6 +348,7 @@ footer address ul {
   font-weight: 400;
   font-size: 14px;
   line-height: 1, 714;
+  font-style: normal;
   letter-spacing: 0, 03em;
   color: var(--contrast-text-color);
 
@@ -380,8 +389,7 @@ footer address a {
   font-size: 16px;
   font-weight: 500;
   text-align: center;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
   border-radius: 4px;
   border: 0;
   color: var(--main-text-color);
@@ -433,7 +441,7 @@ footer address a {
   margin-right: 30px;
   margin-bottom: 30px;
   background-color: var(--section-background-color);
-  border: 1px solid var(--main-background-color);
+  border: 1px solid #eeeeee, 100%;
   overflow: hidden;
 }
 
@@ -445,6 +453,12 @@ footer address a {
 }
 .projects-item img {
   display: block;
+}
+.proget-discription {
+  padding-top: 24px;
+  padding-right: 20px;
+  padding-bottom: 24px;
+  padding-left: 24px;
 }
 
 .projects h2 {
