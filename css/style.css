@@ -275,7 +275,7 @@ h4 {
 
 .team {
   font-family: Roboto, sans-serif;
-  letter-spacing: 0 03em;
+  letter-spacing: 0.03em;
   background-color: var(--minor-background-color);
 }
 
@@ -288,14 +288,9 @@ h4 {
   display: flex;
   justify-content: center;
 }
-.team li :not(:last-child) {
-  margin-right: 30px;
-}
-
 .team-item:not(:last-child) {
   margin-right: 30px;
 }
-
 .team h5 {
   font-weight: 500;
   font-size: 16px;
