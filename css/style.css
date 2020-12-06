@@ -386,11 +386,16 @@ footer address a {
   margin-right: 8px;
 }
 
+.buttons-list li:last-child {
+  margin-right: 0;
+}
+
 .buttons-item {
   margin: 0;
   padding: 6px 22px;
+  height: 38px;
   letter-spacing: 0.03em;
-  line-height: 1, 625;
+  line-height: 1.625;
   font-size: 16px;
   font-weight: 500;
   text-align: center;
@@ -399,6 +404,11 @@ footer address a {
   border: 0;
   color: var(--main-text-color);
   background-color: var(--minor-button-color);
+  font-style: Roboto;
+  font-size: 16px;
+  line-height: 1.63;
+  font-style: normal;
+  letter-spacing: 0.03em;
 }
 
 .buttons-item:hover,
@@ -409,6 +419,10 @@ footer address a {
 }
 
 /*projects*/
+
+.container .project {
+  padding-top: 50px;
+}
 .portfolio {
   padding-left: 15px;
   padding-right: 15px;
